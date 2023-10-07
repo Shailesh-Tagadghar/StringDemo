@@ -44,7 +44,17 @@ public class Demo1 {
 		
 		//string comparison
 		//1. == checks only the memory location
+		System.out.println("Equals to (==) checks only the memory location");
 		System.out.println(str1==str2); //true
 		System.out.println(str3==str4); //false
+		
+		//2. equals() : it will compare string contents and return boolean
+		System.out.println("equals() : it will compare string contents and return boolean");
+		System.out.println(str3.equals(str4));
+		
+		//3. compareTo() : compares to string and return a numeric difference
+		System.out.println("compareTo() : compares to string and return a numeric difference");
+		System.out.println(str3.compareTo("Python"));
+		System.out.println(str3.compareTo("python"));
 	}
 }
