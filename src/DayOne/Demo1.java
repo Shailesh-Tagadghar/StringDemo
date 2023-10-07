@@ -56,5 +56,26 @@ public class Demo1 {
 		System.out.println("compareTo() : compares to string and return a numeric difference");
 		System.out.println(str3.compareTo("Python"));
 		System.out.println(str3.compareTo("python"));
+		
+		//4. Concat() : to join two string
+		System.out.println("Concat() to join string");
+		String join = str1.concat(str2);
+		System.out.println(join);
+		
+		//5. CharAt() : it gives character of particular index
+		System.out.println("CharAt() : it gives index of particular character");
+		System.out.println("first character : "+str3.charAt(0));
+		
+		//6. length()
+		System.out.println("Total Character or length of the string : "+str3.length());
+		
+		//7. Index Of()
+		String str5 = "Welcome";
+		System.out.println("indexOf()");
+		System.out.println("Index of 't' is : "+str5.indexOf('t'));
+		System.out.println("Index of 'e' is : "+str5.indexOf('e'));
+		
+		//8. lastIndexOf()
+		System.out.println("Last Index of 'e' is : "+str5.lastIndexOf('e'));
 	}
 }
