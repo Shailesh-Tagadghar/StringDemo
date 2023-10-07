@@ -43,5 +43,8 @@ public class Demo1 {
 		System.out.println(str4.hashCode());
 		
 		//string comparison
+		//1. == checks only the memory location
+		System.out.println(str1==str2); //true
+		System.out.println(str3==str4); //false
 	}
 }
