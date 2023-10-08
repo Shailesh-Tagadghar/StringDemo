@@ -15,5 +15,15 @@ public class StringMethods {
 		else {
 			System.out.println("Kindly enter valid email address...");
 		}
+		
+		System.out.println("Enter Unique Key Value for Student ID ");
+		String UniqueKey = sc.next();
+		
+		if(UniqueKey.startsWith("s_")){
+			System.out.println("Student Id is present in database...");
+		}
+		else {
+			System.out.println("Student Id is start with 's_' so create new Id..");
+		}
 	}
 }
