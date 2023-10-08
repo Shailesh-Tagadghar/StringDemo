@@ -9,6 +9,8 @@ public class StringMethods {
 		String Email = sc.next();
 		Email=Email.toLowerCase();
 		
+		
+		//endsWith
 		if(Email.endsWith("@gmail.com")){
 			System.out.println("Registration Successful...");
 		}
@@ -19,11 +21,19 @@ public class StringMethods {
 		System.out.println("Enter Unique Key Value for Student ID ");
 		String UniqueKey = sc.next();
 		
+		//startsWith
 		if(UniqueKey.startsWith("s_")){
 			System.out.println("Student Id is present in database...");
 		}
 		else {
 			System.out.println("Student Id is start with 's_' so create new Id..");
 		}
+		
+		String str = "banana is sweet. i love banana. banana is my fvt fruit";
+		
+		//indexOf //lastIndexOf //
+		System.out.println(str.indexOf("banana"));
+		System.out.println(str.lastIndexOf("banana"));
+		System.out.println(str.indexOf("banana",2));
 	}
 }
