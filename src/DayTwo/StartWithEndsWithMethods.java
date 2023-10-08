@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class StartWithEndsWithMethods {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter Names ");
-		String Name1 = sc.next();
-		String Name2 = sc.next();
-		String Name3 = sc.next();
-		String Name4 = sc.next();
-		String Name5 = sc.next();
-		
-		if(Name1 || Name2 || )
+		for(int i=0;i<5;i++) {
+			System.out.println("Enter Name ");
+			String Name = sc.nextLine().toLowerCase();
+			char lastchar = Name.charAt(Name.length()-1);
+			String Gender = (lastchar == 'a' || lastchar == 'e' || lastchar == 'i' || lastchar == 'o' || lastchar == 'u')
+					        ? "femail"
+					        : "mail";
+			System.out.println("Its a "+Gender+ " name "+Name);
+		}
 	}
 }
